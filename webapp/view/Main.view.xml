@@ -21,9 +21,12 @@
 
         <footer>
             <OverflowToolbar id="footerToolbar">
+                <Button id="navigation" text="Navigate to Another View" type="Success" icon="sap-icon://navigation-right-arrow" press="onNav" />
                 <ToolbarSpacer id="footerToolbarSpacer"/>
                 <Button id="saveButton" text="Save" type="Accept" icon="sap-icon://save" press="onSavePressed" />
                 <Button id="cancelButton" text="Cancel" type="Reject" icon="sapicon://cancel" press="onCancelPressed" />
+                <ToolbarSpacer id="footerToolbarSpacer2"/>
+                <ToolbarSpacer id="footerToolbarSpacer3"/>
             </OverflowToolbar>
         </footer>
 
