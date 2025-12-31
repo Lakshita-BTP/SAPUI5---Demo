@@ -22,7 +22,7 @@ export default class Main extends Controller {
         MessageBox.warning("Are you sure you want to cancel?", {
             actions: [MessageBox.Action.YES, MessageBox.Action.NO],
             emphasizedAction: MessageBox.Action.YES,
-            onClose: (sSelectedAction: String) => {
+            onClose: (sSelectedAction: string | null) => {
                 if (MessageBox.Action.YES === sSelectedAction) {
                     MessageBox.success("Successfully cancelled.");
                 }
