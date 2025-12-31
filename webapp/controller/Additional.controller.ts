@@ -9,4 +9,10 @@ export default class Additional extends Controller {
     public onInit(): void {
     }
 
+    private onNavBack() {
+        this.getOwnerComponent()
+            .getRouter()
+            .navTo("RouteMain");
+    }
+
 }

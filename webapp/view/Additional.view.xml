@@ -1,6 +1,6 @@
 <mvc:View xmlns="sap.m" controllerName="djp.clouddna.demo.controller.Additional" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc">
 
-    <Page id="page2" title="{i18n>title}">
+    <Page id="page2" title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
 
         <customHeader>
         </customHeader>

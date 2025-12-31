@@ -15,7 +15,7 @@ export default class Main extends Controller {
         oInputFirstname.setValue("Daniel");
     }
 
-        private onSavePressed() {
+    private onSavePressed() {
         MessageToast.show("Successfully saved");
     }
     private onCancelPressed() {
@@ -28,5 +28,11 @@ export default class Main extends Controller {
                 }
             }
         });
+    }
+
+    private onNav() {
+        this.getOwnerComponent()
+            .getRouter()
+            .navTo("Additional");
     }
 }

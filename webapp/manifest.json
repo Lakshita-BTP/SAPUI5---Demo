@@ -96,15 +96,22 @@
         {
           "name": "RouteMain",
           "pattern": ":?query:",
-          "target": [
-            "TargetMain"
-          ]
+          "target": [ "TargetMain" ]
+        },
+        {
+          "name": "Additional",
+          "pattern": "Additionaldd",
+          "target": "Additional"
         }
       ],
       "targets": {
         "TargetMain": {
           "id": "Main",
           "name": "Main"
+        },
+        "Additional": {
+          "id": "Additional",
+          "name": "Additional"
         }
       }
     },
