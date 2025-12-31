@@ -15,6 +15,11 @@ server:
             - /resources
             - /test-resources
           url: https://ui5.sap.com
+        backend:
+          - url: https://a2f99fa5trial-dev-fiori-advanced-no-auth-srv.cfapps.us10-001.hana.ondemand.com
+            authenticationType: NoAuthentication
+            destination: fiori-advanced-no-auth
+            path: /processor
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
