@@ -2,6 +2,8 @@ import Input from "sap/m/Input";
 import MessageBox from "sap/m/MessageBox";
 import MessageToast from "sap/m/MessageToast";
 import Controller from "sap/ui/core/mvc/Controller";
+import UIComponent from "sap/ui/core/UIComponent";
+
 
 /**
  * @namespace djp.clouddna.demo.controller
@@ -31,8 +33,10 @@ export default class Main extends Controller {
     }
 
     private onNav() {
-        this.getOwnerComponent()
-            .getRouter()
-            .navTo("Additional");
+        // this.getOwnerComponent()
+        //     .getRouter()
+        //     .navTo("Additional");
+        const oRouter = UIComponent.getRouterFor(this);
+            oRouter.navTo("Additional");
     }
 }
