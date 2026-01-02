@@ -57,6 +57,7 @@
             </VBox>
 
             <VBox >
+                <CheckBox class="sapUiSmallMarginBegin" text="Do you like this book" selected="true" />
             </VBox>
 
             <VBox >
