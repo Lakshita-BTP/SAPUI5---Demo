@@ -55,16 +55,13 @@
             <VBox id="_IDGenVBox6" >
                 <DatePicker class="sapUiSmallMarginBegin" id="datePicker" width="350px" />
             </VBox>
-
             <VBox id="_IDGenVBox7" >
                 <CheckBox id="_IDGenCheckBox" class="sapUiSmallMarginBegin" text="Do you like this book" selected="true" />
             </VBox>
-
             <VBox id="_IDGenVBox8" >
                 <Label id="_IDGenLabel" text="Do you like this book?" width="350px"/>
                 <Switch id="_IDGenSwitch" customTextOn="Sure" customTextOff="Meh" state="true" />
             </VBox>
-
             <VBox id="_IDGenVBox9" >
                 <RadioButtonGroup id="_IDGenRadioButtonGroup" selectedIndex="0" >
                     <RadioButton id="_IDGenRadioButton" text="I like it"/>
@@ -72,11 +69,9 @@
                     <RadioButton id="_IDGenRadioButton2" text="I like something else"/>
                 </RadioButtonGroup>
             </VBox>
-
             <VBox id="_IDGenVBox10" class="sapUiMediumMarginBottom" >
                 <RangeSlider id="_IDGenRangeSlider" min="0" max="200" range="0,150" showAdvancedTooltip="true" enableTickmarks="true" width="350px" />
             </VBox>
-
             <VBox id="_IDGenVBox11" class="sapUiMediumMarginBottom" >
                 <Label id="_IDGenLabel1" text="My favorite SAP Technology" />
                 <Select id="_IDGenSelect" forceSelection="false" selectedKey="" >
@@ -97,14 +92,53 @@
                     </items>
                 </ComboBox>
             </VBox>
-            <VBox id="_IDGenVBox13" class="sapUiMediumMarginBottom" >
-            
+            <VBox id="_IDGenVBox13" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle3" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
+                <Button id="_IDGenButton5" text="I'm a default button" />
+                <Button id="_IDGenButton6" text="Accept" type="Accept" />
+                <Button id="_IDGenButton7" text="Reject" type="Reject" />
+                <Button id="_IDGenButton8" text="I'm transparent" type="Transparent" />
+                <Button id="_IDGenButton9" type="Back" />
+                <Button id="_IDGenButton10" text="I'm important" type="Emphasized"/>
+                <Button id="_IDGenButton11" text="I have an icon" icon="sap-icon://education"/>
             </VBox>
-            <VBox id="_IDGenVBox14" class="sapUiMediumMarginBottom" >
+            <VBox id="_IDGenVBox14" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle4" text="SAP.M.MenuButton" class="titleBg" width="1230px" />
+                <MenuButton id="_IDGenMenuButton" text="Im a MenuButton" menuPosition="BeginBottom" buttonMode="Split" >
+                    <!-- <menu> -->
+                        <Menu id="_IDGenMenu" >
+                            <MenuItem id="_IDGenMenuItem1" text="I'm a MenuItem" icon="sap-icon://edit"/>
+                            <MenuItem id="_IDGenMenuItem2" text="I'm a SubMenu">
+                                <items>
+                                    <MenuItem id="_IDGenMenuItem3" text="I'm a MenuItem"/>
+                                    <MenuItem id="_IDGenMenuItem4" text="I'm a MenuItem too"/>
+                                </items>
+                            </MenuItem>
+                        </Menu>
+                    <!-- </menu> -->
+                </MenuButton>
             </VBox>
-            <VBox id="_IDGenVBox15" class="sapUiMediumMarginBottom" >
+            <VBox id="_IDGenVBox15" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle5" text="SAP.M.SegmentedButton" class="titleBg" width="1230px" />
+                <SegmentedButton id="_IDGenSegmentedButton1" selectedKey="second" >
+                    <items>
+                        <SegmentedButtonItem id="_IDGenSegmentedButtonItem4" key="first" text="I'm first"/>
+                        <SegmentedButtonItem id="_IDGenSegmentedButtonItem5" key="second" text="I'm second"/>
+                        <SegmentedButtonItem id="_IDGenSegmentedButtonItem6" key="third" text="I'm third"/>
+                    </items>
+                </SegmentedButton>
             </VBox>
-            <VBox id="_IDGenVBox16" class="sapUiMediumMarginBottom" >
+            <VBox id="_IDGenVBox16" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle6" text="SAP.M.LINK" class="titleBg" width="1230px" />
+                <Link id="_IDGenLink" text="I open SAPUI5" href="https://ui5.sap.com" target="_blank"/>
+            </VBox>
+            <VBox id="_IDGenVBox17" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle7" text="SAP.UI.CORE.ICON" class="titleBg" width="1230px" />
+                <core:Icon id="_IDGenIcon" src="sap-icon://course-book" color="blue" activeBackgroundColor="yellow" activeColor="magenta" alt="Alternative text"
+                            hoverBackgroundColor="brown" hoverColor="purple" />
+            </VBox>
+            <VBox id="_IDGenVBox18" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle8" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
             </VBox>
         </content>
 
