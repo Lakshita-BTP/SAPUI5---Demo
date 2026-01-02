@@ -52,6 +52,21 @@
             <VBox >
                 <TextArea class="sapUiSmallMarginBegin" value="I'm a really long text" rows="6"/>
             </VBox>
+            <VBox >
+                <DatePicker class="sapUiSmallMarginBegin" id="datePicker" width="350px" />
+            </VBox>
+
+            <VBox >
+            </VBox>
+
+            <VBox >
+            </VBox>
+
+            <VBox >
+            </VBox>
+
+            <VBox >
+            </VBox>
         </content>
 
         <footer>
