@@ -9,6 +9,7 @@ import Text from "sap/m/Text";
 import Button from "sap/m/Button";
 import Bar from "sap/m/Bar";
 import Title from "sap/m/Title";
+import VBox from "sap/m/VBox";
 import NavContainer from "sap/m/NavContainer";
 
 
@@ -57,8 +58,33 @@ export default class Main extends Controller {
                 navButtonPress: () => {
                     oNav.back();
                 },
-                content: [
-                    new Text({ text: "This page is created dynamically" })
+                content: [new VBox({
+                    items: [(() => {
+                        const t = new Title({ text: "This is a title", titleStyle: "H1" });
+                        t.addStyleClass("sapUiSmallMarginBegin");
+                        t.addStyleClass("myGreenTitle");
+                        return t;
+                    })()
+                    ]
+                }),
+
+                (() => {
+                    const txt = new Text({ text: "Hello World", maxLines: 1, wrapping: true });
+                    txt.addStyleClass("sapUiSmallMarginBegin");
+                    txt.addStyleClass("myGreenTitle");
+                    return txt;
+                })(),
+
+                new VBox({
+                    items: [ 
+                        (() => {
+                            const inpt = new Input({placeholder: "Provide something", description:"Unit", width:"300px"});
+                            inpt.addStyleClass("sapUiSmallMarginBegin");
+                            return inpt;
+                        })()
+                    ]
+                })
+
                 ]
             });
         }

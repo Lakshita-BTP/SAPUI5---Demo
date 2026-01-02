@@ -3,14 +3,6 @@
     <Page id="page2" title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
 
         <customHeader>
-            <!-- <OverflowToolbar>
-                <Button icon="sap-icon://nav-back" press="onNavBack"/>
-                <Title text="Purchase Order"/>
-                <ToolbarSpacer/>
-                <Button text="Edit"/>
-                <Button text="Delete"/>
-                <Button icon="sap-icon://action"/>
-            </OverflowToolbar> -->
             <Bar>
                 <contentLeft>
                     <Button icon="sap-icon://nav-back" press="onNavBack"/>
