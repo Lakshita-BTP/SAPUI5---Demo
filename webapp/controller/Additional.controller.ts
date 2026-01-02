@@ -1,5 +1,7 @@
 import Controller from "sap/ui/core/mvc/Controller";
 import UIComponent from "sap/ui/core/UIComponent";
+// import Page from "sap/m/Page";
+// import Text from "sap/m/Text";
 
 /**
  * @namespace djp.clouddna.demo.controller
@@ -8,13 +10,8 @@ export default class Additional extends Controller {
 
     /*eslint-disable @typescript-eslint/no-empty-function*/
     public onInit(): void {
-    }
 
-    // private onNavBack() {
-    //     this.getOwnerComponent()
-    //         .getRouter()
-    //         .navTo("RouteMain");
-    // }
+    }
 
     private onNavBack(): void {
         const oRouter = UIComponent.getRouterFor(this);
