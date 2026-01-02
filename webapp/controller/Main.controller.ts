@@ -4,11 +4,20 @@ import MessageToast from "sap/m/MessageToast";
 import Controller from "sap/ui/core/mvc/Controller";
 import UIComponent from "sap/ui/core/UIComponent";
 
+import Page from "sap/m/Page";
+import Text from "sap/m/Text";
+import Button from "sap/m/Button";
+import Bar from "sap/m/Bar";
+import Title from "sap/m/Title";
+import NavContainer from "sap/m/NavContainer";
+
 
 /**
  * @namespace djp.clouddna.demo.controller
  */
 export default class Main extends Controller {
+
+    private _oDynamicPage?: Page;
 
     /*eslint-disable @typescript-eslint/no-empty-function*/
     public onInit(): void {
@@ -33,10 +42,29 @@ export default class Main extends Controller {
     }
 
     private onNav() {
-        // this.getOwnerComponent()
-        //     .getRouter()
-        //     .navTo("Additional");
         const oRouter = UIComponent.getRouterFor(this);
-            oRouter.navTo("Additional");
+        oRouter.navTo("Additional");
     }
+
+    public onDynPage(): void {
+        const oNav = this.byId("navContainer") as NavContainer;
+
+        // Create once (lazy creation)
+        if (!this._oDynamicPage) {
+            this._oDynamicPage = new Page({
+                title: "Dynamic Page",
+                showNavButton: true,
+                navButtonPress: () => {
+                    oNav.back();
+                },
+                content: [
+                    new Text({ text: "This page is created dynamically" })
+                ]
+            });
+        }
+
+        oNav.addPage(this._oDynamicPage);
+        oNav.to(this._oDynamicPage);
+    }
+
 }

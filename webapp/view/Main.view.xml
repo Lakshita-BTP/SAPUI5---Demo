@@ -1,7 +1,17 @@
 <mvc:View xmlns="sap.m" controllerName="djp.clouddna.demo.controller.Main" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc">
 
+<NavContainer id="navContainer">
     <Page id="page" title="{i18n>title}">
         <customHeader>
+        <Bar id="_IDGenBar">
+            <contentMiddle>
+                <Title id="_IDGenTitle" text="SAP UI5 Development"/>
+                <ToolbarSpacer id="_IDGenToolbarSpacer" />
+                <Button id="_IDGenButton" text="Open Dynamic Page" icon="sap-icon://page" type="Emphasized" press="onDynPage"/>
+                <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+                <ToolbarSpacer id="_IDGenToolbarSpacer2" />
+            </contentMiddle>
+        </Bar>
         </customHeader>
 
         <content>
@@ -30,5 +40,6 @@
         </footer>
 
     </Page>
+</NavContainer>
 
 </mvc:View>
