@@ -61,11 +61,40 @@
             </VBox>
 
             <VBox >
+                <Label text="Do you like this book?" width="350px"/>
+                <Switch customTextOn="Sure" customTextOff="Meh" state="true" />
             </VBox>
 
             <VBox >
+                <RadioButtonGroup selectedIndex="0" >
+                    <RadioButton text="I like it"/>
+                    <RadioButton text="I like it very much"/>
+                    <RadioButton text="I like something else"/>
+                </RadioButtonGroup>
             </VBox>
 
+            <VBox >
+                <RangeSlider min="0" max="200" range="0,150" showAdvancedTooltip="true" enableTickmarks="true" width="350px" />
+            </VBox>
+
+            <VBox >
+                <Label text="My favorite SAP Technology" />
+                <Select forceSelection="false" selectedKey="" >
+                    <items>
+                        <core:Item key="rap" text="ABAP RESTful Application Programming Model" />
+                        <core:Item key="segw" text="SAP Gateway Service" />
+                        <core:Item key="cap" text="Cloud Application Programming Model" />
+                    </items>
+                </Select>
+            </VBox>
+            <VBox >
+            </VBox>
+            <VBox >
+            </VBox>
+            <VBox >
+            </VBox>
+            <VBox >
+            </VBox>
             <VBox >
             </VBox>
         </content>
