@@ -1,6 +1,6 @@
-<mvc:View xmlns="sap.m" controllerName="djp.clouddna.demo.controller.Additional" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core">
+<mvc:View xmlns:form="sap.fe.macros.form" xmlns="sap.m" controllerName="djp.clouddna.demo.controller.Additional" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
 
-    <Page id="page2" title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
+    <Page id="page2" title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack" backgroundDesign="Transparent" >
 
         <customHeader>
             <Bar id="_IDGenBar1">
@@ -26,15 +26,20 @@
         </customHeader>
 
         <content>
-
-            <VBox id="_IDGenVBox" >
+            <VBox id="_IDGenVBoxD" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle25" text="SAP.M.TEXT" class="titleBg" width="1230px" />
+                <Text id="_IDGenText" class="sapUiSmallMarginBegin" text="Hello World" maxLines="1" wrapping="true"/>
+            </VBox>
+            <VBox id="_IDGenVBox" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle24" text="SAP.M.TITLE" class="titleBg" width="1230px" />
                 <Title id="_IDGenTitle2" class="sapUiSmallMarginBegin" text="This is a title" titleStyle="H1"/>
             </VBox>
-                <Text id="_IDGenText" class="sapUiSmallMarginBegin" text="Hello World" maxLines="1" wrapping="true"/>
-            <VBox id="_IDGenVBox1" >
+            <VBox id="_IDGenVBox1" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle23" text="SAP.M.INPUT" class="titleBg" width="1230px" />
                 <Input id="_IDGenInput" class="sapUiSmallMarginBegin" placeholder="Provide something" description="Unit" width="300px"/>
             </VBox>
-            <VBox id="_IDGenVBox2" >
+            <VBox id="_IDGenVBox2" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle22" text="SAP.M.SUGGESTIONITEMS" class="titleBg" width="1230px" />
                 <Input id="_IDGenInput1" class="sapUiSmallMarginBegin sapUiSmallMarginBegin" showSuggestion="true" showClearIcon="true" width="300px">
                     <suggestionItems>
                         <core:Item id="_IDGenItem1" key="1" text="first"/>
@@ -43,36 +48,45 @@
                     </suggestionItems>
                 </Input>
             </VBox>
-            <VBox id="_IDGenVBox3" >
+            <VBox id="_IDGenVBox3" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle21" text="SAP.M.STEPINPUT" class="titleBg" width="1230px" />
                 <StepInput id="_IDGenStepInput" class="sapUiSmallMarginBegin" value="10" step="10" max="100" min="0" width="300px" />
             </VBox>
-            <VBox id="_IDGenVBox4" >
+            <VBox id="_IDGenVBox4" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle20" text="SAP.M.MASKINPUT" class="titleBg" width="1230px" />
                 <MaskInput id="_IDGenMaskInput" class="sapUiSmallMarginBegin" mask="+81 9999 9999999999" width="350px"/>
             </VBox>
-            <VBox id="_IDGenVBox5" >
+            <VBox id="_IDGenVBox5" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle19" text="SAP.M.TEXTAREA" class="titleBg" width="1230px" />
                 <TextArea id="_IDGenTextArea" class="sapUiSmallMarginBegin" value="I'm a really long text" rows="6"/>
             </VBox>
-            <VBox id="_IDGenVBox6" >
+            <VBox id="_IDGenVBox6" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle18" text="SAP.M.DATEPICKER" class="titleBg" width="1230px" />
                 <DatePicker class="sapUiSmallMarginBegin" id="datePicker" width="350px" />
             </VBox>
-            <VBox id="_IDGenVBox7" >
+            <VBox id="_IDGenVBox7" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle17" text="SAP.M.CHECKBOX" class="titleBg" width="1230px" />
                 <CheckBox id="_IDGenCheckBox" class="sapUiSmallMarginBegin" text="Do you like this book" selected="true" />
             </VBox>
-            <VBox id="_IDGenVBox8" >
+            <VBox id="_IDGenVBox8" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle16" text="SAP.M.SWITCH" class="titleBg" width="1230px" />
                 <Label id="_IDGenLabel" text="Do you like this book?" width="350px"/>
                 <Switch id="_IDGenSwitch" customTextOn="Sure" customTextOff="Meh" state="true" />
             </VBox>
-            <VBox id="_IDGenVBox9" >
+            <VBox id="_IDGenVBox9" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle15" text="SAP.M.RADIOBUTTON/GROUP" class="titleBg" width="1230px" />
                 <RadioButtonGroup id="_IDGenRadioButtonGroup" selectedIndex="0" >
                     <RadioButton id="_IDGenRadioButton" text="I like it"/>
                     <RadioButton id="_IDGenRadioButton1" text="I like it very much"/>
                     <RadioButton id="_IDGenRadioButton2" text="I like something else"/>
                 </RadioButtonGroup>
             </VBox>
-            <VBox id="_IDGenVBox10" class="sapUiMediumMarginBottom" >
+            <VBox id="_IDGenVBox10" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle14" text="SAP.M.RANGESLIDER" class="titleBg" width="1230px" />
                 <RangeSlider id="_IDGenRangeSlider" min="0" max="200" range="0,150" showAdvancedTooltip="true" enableTickmarks="true" width="350px" />
             </VBox>
-            <VBox id="_IDGenVBox11" class="sapUiMediumMarginBottom" >
+            <VBox id="_IDGenVBox11" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle13" text="SAP.M.SELECT" class="titleBg" width="1230px" />
                 <Label id="_IDGenLabel1" text="My favorite SAP Technology" />
                 <Select id="_IDGenSelect" forceSelection="false" selectedKey="" >
                     <items>
@@ -82,7 +96,8 @@
                     </items>
                 </Select>
             </VBox>
-            <VBox id="_IDGenVBox12" class="sapUiMediumMarginBottom" >
+            <VBox id="_IDGenVBox12" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle12" text="SAP.M.COMBOBOX" class="titleBg" width="1230px" />
                 <Label id="_IDGenLabel2" text="My favourite SAP Technology" />
                 <ComboBox id="_IDGenComboBox" >
                     <items>
@@ -138,7 +153,138 @@
                             hoverBackgroundColor="brown" hoverColor="purple" />
             </VBox>
             <VBox id="_IDGenVBox18" class="sapUiMediumMarginBottom myBorderBox" >
-                <Title id="_IDGenTitle8" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
+                <Title id="_IDGenTitle8" text="SAP.UI.LAYOUT.FORM with ColumnLayout" class="titleBg" width="1230px" />
+                <f:Form id="_IDGenForm" editable="true" >
+                    <f:title>
+                        <core:Title id="_IDGenTitle30" text="Book Data"></core:Title>
+                    </f:title>
+                    <f:layout>
+                        <f:ColumnLayout id="_IDGenColumnLayout" columnsM="1" columnsL="2" columnsXL="2"/>
+                    </f:layout>
+                    <f:formContainers>
+                        <f:FormContainer id="_IDGenFormContainer1">
+                            <f:formElements>
+                                <f:FormElement id="_IDGenFormElement" label="Book name">
+                                    <f:fields>
+                                        <Input id="_IDGenInput2" placeholder="Book name"/>
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="_IDGenFormElement1" label="ISBN">
+                                    <f:fields>
+                                        <Input id="_IDGenInput3" placeholder="ISBN"/>
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="_IDGenFormElement2" label="Author">
+                                    <f:fields>
+                                        <Input id="_IDGenInput4" placeholder="First name"/>
+                                        <Input id="_IDGenInput5" placeholder="Last name"/>
+                                    </f:fields>
+                                </f:FormElement>
+                            </f:formElements>
+                        </f:FormContainer>
+                    </f:formContainers>
+                </f:Form>
+            </VBox>
+            <VBox id="_IDGenVBox20" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle9" text="SAP.UI.LAYOUT.FORM with Responsive Grid Layout" class="titleBg" width="1230px" />
+                <f:Form id="_IDGenForm2" editable="true" >
+                    <f:title>
+                        <core:Title id="_IDGenTitle31" text="Book Data"></core:Title>
+                    </f:title>
+                    <f:layout>
+                        <f:ResponsiveGridLayout id="_IDGenResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+                            labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+                            emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+                            singleContainerFullSize="false"/>
+                    </f:layout>
+                    <f:formContainers>
+                        <f:FormContainer id="_IDGenFormContainer" title="General Information" >
+                            <f:formElements>
+                                <f:FormElement id="_IDGenFormElement3" label="Book name">
+                                    <f:fields>
+                                        <Input id="_IDGenInput6" placeholder="Book name"/>
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="_IDGenFormElement4" label="ISBN">
+                                    <f:fields>
+                                        <Input id="_IDGenInput7" placeholder="ISBN"/>
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="_IDGenFormElement5" label="Author">
+                                    <f:fields>
+                                        <Input id="_IDGenInput8" placeholder="First name">
+                                            <layoutData>
+                                                <l:GridData id="_IDGenGridData1" span="XL2 L2 M2 S12" />
+                                            </layoutData>
+                                        </Input>
+                                        <Input id="_IDGenInput9" placeholder="Last name">
+                                            <layoutData>
+                                                <l:GridData id="_IDGenGridData2" span="XL2 L2 M2 S12" />
+                                            </layoutData>
+                                        </Input>
+                                    </f:fields>
+                                </f:FormElement>
+                            </f:formElements>
+                        </f:FormContainer>
+                        <f:FormContainer id="_IDGenFormContainer2" title="Purchase Information" >
+                            <f:formElements>
+                                <f:FormElement id="_IDGenFormElement7" label="Price">
+                                    <f:fields>
+                                        <Input id="_IDGenInput10" placeholder="Price" type="Number" description="€"/>
+                                    </f:fields>
+                                </f:FormElement>
+                                <f:FormElement id="_IDGenFormElement8" label="Purchasing Date">
+                                    <f:fields>
+                                        <DatePicker id="_IDGenDatePicker" />
+                                    </f:fields>
+                                </f:FormElement>
+                            </f:formElements>
+                        </f:FormContainer>
+                    </f:formContainers>
+                </f:Form>
+            </VBox>
+            <VBox id="_IDGenVBox21" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle10" text="SAP.UI.LAYOUT.SIMPLEFORM" class="titleBg" width="1230px" />
+                <f:SimpleForm id="_IDGenSimpleForm" editable="true" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+                            labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+                            emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+                            singleContainerFullSize="false" title="Book Data" >
+                    <Title id="_IDGenTitle32" text="General Information"/>
+                    <Label id="_IDGenLabel3" text="Book name" /><Input id="_IDGenInput12" placeholder="Book name" />
+                    <Label id="_IDGenLabel4" text="ISBN"/><Input id="_IDGenInput13" placeholder="ISBN" />
+                    <Label id="_IDGenLabel5" text="Author"/>
+                    <Input id="_IDGenInput14" placeholder="First name">
+                        <layoutData>
+                            <l:GridData id="_IDGenGridData" span="XL2 L2 M2 S12" />
+                        </layoutData>
+                    </Input>
+                    <Input id="_IDGenInput15" placeholder="Last name">
+                        <layoutData>
+                            <l:GridData id="_IDGenGridData3" span="XL2 L2 M2 S12" />
+                        </layoutData>
+                    </Input>
+                    <core:Title id="_IDGenTitle33" text="Purchasing Information"/>
+                    <Label id="_IDGenLabel6" text="Price"/>
+                    <Input id="_IDGenInput16" placeholder="Price" type="Number" description="€"/>
+                    <Label id="_IDGenLabel7" text="Purchasing Date"/>
+                    <DatePicker id="_IDGenDatePicker1" />
+                    
+                </f:SimpleForm>
+            </VBox>
+            <VBox id="_IDGenVBox22" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle11" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
+            </VBox>
+            <VBox id="_IDGenVBox23" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle26" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
+            </VBox>
+            <VBox id="_IDGenVBox24" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle27" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
+            </VBox>
+            <VBox id="_IDGenVBox25" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle28" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
+            </VBox>
+            <VBox id="_IDGenVBox26" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle29" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
             </VBox>
         </content>
 
