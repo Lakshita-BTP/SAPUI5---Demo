@@ -272,10 +272,29 @@
                 </f:SimpleForm>
             </VBox>
             <VBox id="_IDGenVBox22" class="sapUiMediumMarginBottom myBorderBox" >
-                <Title id="_IDGenTitle11" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
+                <Title id="_IDGenTitle11" text="SAP.M.LIST" class="titleBg" width="1230px" />
+                <List id="_IDGenList" items="{/books}" headerText="Books" >
+                    <items>
+                        <StandardListItem id="_IDGenStandardListItem" title="{name}" description="{author}"
+                                          info="{= ${inStock} ? 'In Stock' : 'Not in Stock'}"
+                                          infoState="{= ${inStock} ? 'Success' : 'Error'}"
+                        />
+                    </items>
+                </List>
             </VBox>
             <VBox id="_IDGenVBox23" class="sapUiMediumMarginBottom myBorderBox" >
-                <Title id="_IDGenTitle26" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
+                <Title id="_IDGenTitle26" text="SAP.M.LIST Object List Item" class="titleBg" width="1230px" />
+                <List id="_IDGenList2" items="{/books}" headerText="Books" >
+                    <items>
+                        <ObjectListItem id="_IDGenObjectListItem" title="{name}" number="{price}" numberUnit="{priceUnit}">
+                            <firstStatus>
+                                <ObjectStatus id="_IDGenObjectStatus" text="{= ${inStock} ? 'In Stock' : 'Not in Stock'}" state="{= ${inStock} ? 'Success' : 'Error'}"/>
+                            </firstStatus>
+                            <ObjectAttribute id="_IDGenObjectAttribute" title="Author" text="{auther}"/>
+                            <ObjectAttribute id="_IDGenObjectAttribute1" title="Release Year" text="{releaseYear}"/>
+                        </ObjectListItem>
+                    </items>
+                </List>
             </VBox>
             <VBox id="_IDGenVBox24" class="sapUiMediumMarginBottom myBorderBox" >
                 <Title id="_IDGenTitle27" text="SAP.M.BUTTON" class="titleBg" width="1230px" />
