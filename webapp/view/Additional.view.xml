@@ -414,12 +414,30 @@
                     <Button id="_IDGenButton20" text="Third" />
                     <Button id="_IDGenButton21" text="Fourth" />
                 </FlexBox>
-                <FlexBox height="10em" width="71em" justifyContent="Start" direction="Column" alignItems="Start" class="myFlexBoxBorder sapUiSmallMarginBottom" >
-                    <FlexBox height="5em" width="10em" justifyContent="Start" direction="Column" alignItems="Start" class="myFlexBoxBorder sapUiSmallMarginBottom" >
-                        <Button text="First" />
-                        <Button text="Second" />
+                <FlexBox id="_IDGenFlexBox3" height="10em" width="71em" justifyContent="Start" direction="Column" alignItems="Start" class="myFlexBoxBorder sapUiSmallMarginBottom" >
+                    <FlexBox id="_IDGenFlexBox4" height="5em" width="10em" justifyContent="Start" direction="Column" alignItems="Start" class="myFlexBoxBorder sapUiSmallMarginBottom" >
+                        <Button id="_IDGenButton22" text="First" />
+                        <Button id="_IDGenButton23" text="Second" />
                     </FlexBox>
                 </FlexBox>
+            </VBox>
+
+            <VBox id="_IDGenVBox19" class="sapUiMediumMarginBottom myBorderBox" height="40em" >
+                <Title id="_IDGenTitle36" text="SAP.M.ICON_TAB_BAR" class="titleBg" width="1230px" />
+                <IconTabBar id="_IDGenIconTabBar1" >
+                    <items>
+                        <IconTabFilter id="_IDGenIconTabFilter" text="First" icon="sap-icon://bookmark" iconColor="Neutral" >
+                            <Text id="_IDGenText10" text="I'm in the first Tab"/>
+                        </IconTabFilter>
+                        <IconTabSeparator id="_IDGenIconTabSeparator" />
+                        <IconTabFilter id="_IDGenIconTabFilter1" text="Second" icon="sap-icon://account" iconColor="Critical" >
+                            <Text id="_IDGenText11" text="I'm in the second Tab"/>
+                        </IconTabFilter>
+                        <IconTabFilter id="_IDGenIconTabFilter2" text="Third" icon="sap-icon://work-history" iconColor="Positive" >
+                            <Text id="_IDGenText12" text="I'm in the third Tab"/>
+                        </IconTabFilter>
+                    </items>
+                </IconTabBar>
             </VBox>
 
             <!-- <VBox class="sapUiMediumMarginBottom myBorderBox" >
