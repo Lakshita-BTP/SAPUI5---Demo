@@ -440,9 +440,28 @@
                 </IconTabBar>
             </VBox>
 
+            <VBox id="_IDGenVBox30" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle37" text="SAP.M.WIZARD" class="titleBg" width="1230px" />
+                <Wizard id="_IDGenWizard" finishButtonText="Complete" >
+                    <WizardStep id="firstStep" title="Buying" icon="sap-icon://currency" nextStep="secondStep" >
+                        <Text id="_IDGenText13" text="Buy our book"/>
+                    </WizardStep>
+                    <WizardStep title="Reading" icon="sap-icon://course-book" id="secondStep" nextStep="thirdStep">
+                        <Text id="_IDGenText15" text="Read our book"/>
+                    </WizardStep>
+                    <WizardStep title="Rating" icon="sap-icon://favorite" id="thirdStep">
+                        <VBox id="_IDGenVBox29" >
+                            <Text id="_IDGenText16" text="Rate our book"/>
+                        <RatingIndicator id="_IDGenRatingIndicator" />
+                        </VBox>
+                    </WizardStep>
+                </Wizard>
+            </VBox>
+
             <!-- <VBox class="sapUiMediumMarginBottom myBorderBox" >
                 <Title text="SAP.M.TEXT" class="titleBg" width="1230px" />
             </VBox> -->
+            
 
         </content>
 
