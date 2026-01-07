@@ -8,17 +8,11 @@
                     <Button id="_IDGenButton1" icon="sap-icon://nav-back" press="onNavBack"/>
                 </contentLeft>
                 <contentMiddle>
-                    <Title id="_IDGenTitle1" text="Customer Details"/>
-                    <SegmentedButton id="_IDGenSegmentedButton">
-                        <items>
-                            <SegmentedButtonItem id="_IDGenSegmentedButtonItem" text="Info"/>
-                            <SegmentedButtonItem id="_IDGenSegmentedButtonItem1" text="Items"/>
-                            <SegmentedButtonItem id="_IDGenSegmentedButtonItem2" text="History"/>
-                        </items>
-                    </SegmentedButton>
+                    <Title id="_IDGenTitle1" text="Controls - [SAP Press Chapter 5.3]"/>
+                    <ToolbarSpacer id="_IDGenToolbarSpacer3"  />
+                    <SearchField id="_IDGenSearchField" width="50%" placeholder="Search Products"/>
                 </contentMiddle>
                 <contentRight>
-                    <SearchField id="_IDGenSearchField" width="100%" placeholder="Search Products"/>
                     <Button id="_IDGenButton2" text="Create" press="onCreate"/>
                     <Button id="_IDGenButton3" icon="sap-icon://action" press="onMore"/>
                 </contentRight>
