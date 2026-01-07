@@ -398,37 +398,35 @@
 <Panel id="_IDGenPanel1" expandable="true" expanded="false" stickyHeader="true" height="20px" headerText="SAP Press - Chapter_5.4 (Layouts)" width="auto" class="sapUiResponsiveMargin" expand="onPanelExpand" >
     <Page id="page3" title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack" backgroundDesign="Transparent" >
 
-        <customHeader>
-            <Bar id="_IDGenBar3" >
-                <contentLeft>
-                    <Button id="_IDGenButton14" icon="sap-icon://nav-back" press="onNavBack"/>
-                </contentLeft>
-                <contentMiddle>
-                    <Title id="_IDGenTitle35" text="Controls - [SAP Press Chapter 5.3]"/>
-                    <ToolbarSpacer id="_IDGenToolbarSpacer5"   />
-                    <SearchField id="_IDGenSearchField1" width="50%" placeholder="Search Products"/>
-                </contentMiddle>
-                <contentRight>
-                    <Button id="_IDGenButton15" text="Create" press="onCreate"/>
-                    <Button id="_IDGenButton16" icon="sap-icon://action" press="onMore"/>
-                </contentRight>
-            </Bar>
-        </customHeader>
-
         <content>
 
-            <VBox id="_IDGenVBox19" class="sapUiMediumMarginBottom myBorderBox" >
-                <Title id="_IDGenTitle36" text="SAP.M.TEXT" class="titleBg" width="1230px" />
-                <Text id="_IDGenText10" class="sapUiSmallMarginBegin" text="Hello World" maxLines="1" wrapping="true"/>
+            <VBox id="_IDGenVBox28" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle35" text="SAP.M.FLEXBOX" class="titleBg" width="1230px" />
+                <FlexBox id="_IDGenFlexBox" justifyContent="Center" class="myFlexBoxBorder sapUiSmallMarginBottom" >
+                    <Button id="_IDGenButton15" text="First" />
+                    <Button id="_IDGenButton16" text="Second" />
+                    <Button id="_IDGenButton17" text="Third" />
+                    <Button id="_IDGenButton18" text="Fourth" />
+                </FlexBox>
+                <FlexBox id="_IDGenFlexBox2" height="20em" width="20em" justifyContent="Start" direction="Column" alignItems="Center" class="myFlexBoxBorder sapUiSmallMarginBottom" >
+                    <Button id="_IDGenButton14" text="First" />
+                    <Button id="_IDGenButton19" text="Second" />
+                    <Button id="_IDGenButton20" text="Third" />
+                    <Button id="_IDGenButton21" text="Fourth" />
+                </FlexBox>
+                <FlexBox height="10em" width="71em" justifyContent="Start" direction="Column" alignItems="Start" class="myFlexBoxBorder sapUiSmallMarginBottom" >
+                    <FlexBox height="5em" width="10em" justifyContent="Start" direction="Column" alignItems="Start" class="myFlexBoxBorder sapUiSmallMarginBottom" >
+                        <Button text="First" />
+                        <Button text="Second" />
+                    </FlexBox>
+                </FlexBox>
             </VBox>
 
+            <!-- <VBox class="sapUiMediumMarginBottom myBorderBox" >
+                <Title text="SAP.M.TEXT" class="titleBg" width="1230px" />
+            </VBox> -->
+
         </content>
-
-        <footer>
-            <OverflowToolbar id="footerToolbar3">
-
-            </OverflowToolbar>
-        </footer>
 
     </Page>
 </Panel>
