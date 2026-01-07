@@ -2,6 +2,9 @@ import Controller from "sap/ui/core/mvc/Controller";
 import UIComponent from "sap/ui/core/UIComponent";
 import JSONModel from "sap/ui/model/json/JSONModel";
 import DatePicker from "sap/m/DatePicker";
+import Event from "sap/ui/base/Event";
+import Panel from "sap/m/Panel";
+import PanelExpandEvent from "sap/m/PanelExpandEvent";
 
 /**
  * @namespace djp.clouddna.demo.controller
@@ -53,6 +56,13 @@ export default class Additional extends Controller {
     private onNavBack(): void {
         const oRouter = UIComponent.getRouterFor(this);
         oRouter.navTo("RouteMain");
+    }
+
+    private onPanelExpand(oEvent: any): void {
+        const bExpanded = oEvent.getParameter("expand") as boolean;
+        const oPanel = oEvent.getSource() as Panel;
+
+        oPanel.setHeight(bExpanded ? "650px" : "20px");
     }
 
 }

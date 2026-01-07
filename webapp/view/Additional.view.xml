@@ -1,5 +1,7 @@
 <mvc:View xmlns:form="sap.fe.macros.form" xmlns="sap.m" controllerName="djp.clouddna.demo.controller.Additional" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:table="sap.ui.table">
 
+<Panel id="_IDGenPanel" expandable="true" expanded="false" stickyHeader="true" height="20px" headerText="SAP Press - Chapter_5.3 (Controls)" width="auto" class="sapUiResponsiveMargin" expand="onPanelExpand">
+
     <Page id="page2" title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack" backgroundDesign="Transparent" >
 
         <customHeader>
@@ -390,5 +392,45 @@
         </footer>
 
     </Page>
+
+</Panel>
+
+<Panel id="_IDGenPanel1" expandable="true" expanded="false" stickyHeader="true" height="20px" headerText="SAP Press - Chapter_5.4 (Layouts)" width="auto" class="sapUiResponsiveMargin" expand="onPanelExpand" >
+    <Page id="page3" title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack" backgroundDesign="Transparent" >
+
+        <customHeader>
+            <Bar id="_IDGenBar3" >
+                <contentLeft>
+                    <Button id="_IDGenButton14" icon="sap-icon://nav-back" press="onNavBack"/>
+                </contentLeft>
+                <contentMiddle>
+                    <Title id="_IDGenTitle35" text="Controls - [SAP Press Chapter 5.3]"/>
+                    <ToolbarSpacer id="_IDGenToolbarSpacer5"   />
+                    <SearchField id="_IDGenSearchField1" width="50%" placeholder="Search Products"/>
+                </contentMiddle>
+                <contentRight>
+                    <Button id="_IDGenButton15" text="Create" press="onCreate"/>
+                    <Button id="_IDGenButton16" icon="sap-icon://action" press="onMore"/>
+                </contentRight>
+            </Bar>
+        </customHeader>
+
+        <content>
+
+            <VBox id="_IDGenVBox19" class="sapUiMediumMarginBottom myBorderBox" >
+                <Title id="_IDGenTitle36" text="SAP.M.TEXT" class="titleBg" width="1230px" />
+                <Text id="_IDGenText10" class="sapUiSmallMarginBegin" text="Hello World" maxLines="1" wrapping="true"/>
+            </VBox>
+
+        </content>
+
+        <footer>
+            <OverflowToolbar id="footerToolbar3">
+
+            </OverflowToolbar>
+        </footer>
+
+    </Page>
+</Panel>
 
 </mvc:View>
