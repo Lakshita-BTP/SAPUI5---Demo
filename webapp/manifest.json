@@ -85,12 +85,11 @@
         "routerClass": "sap.m.routing.Router",
         "controlAggregation": "pages",
         "controlId": "app",
-        "transition": "slide",
+        "transition": "flip",
         "type": "View",
         "viewType": "XML",
         "path": "djp.clouddna.demo.view",
-        "async": true,
-        "viewPath": "djp.clouddna.demo.view"
+        "async": true
       },
       "routes": [
         {
