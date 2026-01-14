@@ -101,6 +101,11 @@
           "name": "Additional",
           "pattern": "Additionaldd",
           "target": "Additional"
+        },
+        {
+          "name": "ObjectPage",
+          "pattern": "ObjectPage",
+          "target": "ObjectPage"
         }
       ],
       "targets": {
@@ -111,6 +116,10 @@
         "Additional": {
           "id": "Additional",
           "name": "Additional"
+        },
+        "ObjectPage": {
+          "id": "ObjectPage",
+          "name": "ObjectPage"
         }
       }
     },

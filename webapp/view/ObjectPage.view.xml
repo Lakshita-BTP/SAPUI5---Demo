@@ -1,0 +1,82 @@
+<mvc:View controllerName="djp.clouddna.demo.controller.ObjectPage" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:uxap="sap.uxap">
+
+    <uxap:ObjectPageLayout id="_IDGenObjectPageLayout" showTitleInHeaderContent="true" showFooter="true" upperCaseAnchorBar="false">
+
+        <uxap:headerTitle>
+            <uxap:ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle1">
+                <uxap:breadcrumbs>
+                <Breadcrumbs id="_IDGenBreadcrumbs1" currentLocationText="New Book">
+                    <Link id="_IDGenLink2" text="Main" press="onNavBack"/>
+                </Breadcrumbs>
+                </uxap:breadcrumbs>
+                <uxap:expandedHeading>
+                    <Title id="_IDGenTitle39" text="Your new Book" wrapping="true"/>
+                </uxap:expandedHeading>
+                <uxap:snappedHeading>
+                    <Title id="_IDGenTitle40" text="Your new Book (Snapped)" wrapping="true"/>
+                </uxap:snappedHeading>
+                <uxap:expandedContent>
+                    <Text id="_IDGenText14" text="Add a book"/>
+                </uxap:expandedContent>
+                <uxap:snappedContent>
+                    <Text id="_IDGenText17" text="Add a book (Snapped)"/>
+                </uxap:snappedContent>
+                <uxap:snappedTitleOnMobile>
+                    <Title id="_IDGenTitle42" text="Add a book"/>
+                </uxap:snappedTitleOnMobile>
+                <uxap:actions>
+                    <Button id="_IDGenButton28" text="Seach on Rheinwerk"/>
+                </uxap:actions>
+            </uxap:ObjectPageDynamicHeaderTitle>
+        </uxap:headerTitle>
+    
+        <uxap:headerContent>
+            <FlexBox id="_IDGenFlexBox5" wrap="Wrap">
+                <Avatar id="_IDGenAvatar" class="sapUiSmallMargin" src="sap-icon://add-coursebook" displaySize="L" />
+            </FlexBox>
+        </uxap:headerContent>
+    
+        <uxap:sections>
+
+            <uxap:ObjectPageSection id="_IDGenObjectPageSection1" titleUppercase="false" title="I'm a section">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection" title="I'm a subsection">
+                        <uxap:blocks>
+                            <Text id="_IDGenText18" text="I'm a text"/>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                    <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection1" title="I'm a subsection too">
+                        <uxap:blocks>
+                            <Text id="_IDGenText19" text="I'm a text too"/>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <uxap:ObjectPageSection id="_IDGenObjectPageSection2" titleUppercase="false" title="I'm a second section">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection2" title="I'm a subsection">
+                        <uxap:blocks>
+                            <Text id="_IDGenText20" text="I'm a text"/>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                    <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection3" title="I'm a subsection too">
+                        <uxap:blocks>
+                            <Text id="_IDGenText21" text="I'm a text too"/>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    
+        <uxap:footer>
+            <OverflowToolbar id="_IDGenOverflowToolbar5" >
+                <ToolbarSpacer id="_IDGenToolbarSpacer7" />
+                    <Button id="_IDGenButton29" text="Save" type="Accept"/>
+                <Button id="_IDGenButton30" text="Cancel" type="Reject"/>
+            </OverflowToolbar>
+        </uxap:footer>
+    
+    </uxap:ObjectPageLayout>
+
+</mvc:View>

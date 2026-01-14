@@ -47,6 +47,11 @@ export default class Main extends Controller {
         oRouter.navTo("Additional");
     }
 
+    private onNavObj() {
+        const oRouter = UIComponent.getRouterFor(this);
+        oRouter.navTo("ObjectPage");
+    }
+
     public onDynPage(): void {
         const oNav = this.byId("navContainer") as NavContainer;
 
