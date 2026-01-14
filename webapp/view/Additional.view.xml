@@ -468,4 +468,55 @@
     </Page>
 </Panel>
 
+<Panel id="_IDGenPanel2" expandable="true" expanded="false" stickyHeader="true" height="20px" headerText="SAP Press - Chapter_5.4.3 (Page)" width="auto" class="sapUiResponsiveMargin" expand="onPanelExpand" >
+    <Page id="page4" title="Add a new Book" >
+
+        <customHeader>
+            <OverflowToolbar id="_IDGenOverflowToolbar2" >
+                <Button id="_IDGenButton24" type="Back" press="onNavBack"/>
+                <Title id="_IDGenTitle38" text="Add a new Book"/>
+                <ToolbarSpacer id="_IDGenToolbarSpacer5"/>
+                <Button id="_IDGenButton25" text="Seach on Rheinwerk"/>
+            </OverflowToolbar>
+        </customHeader>
+
+        <subHeader>
+            <OverflowToolbar id="_IDGenOverflowToolbar3" width="100%">
+                <Breadcrumbs id="_IDGenBreadcrumbs" currentLocationText="New Book">
+                    <Link id="_IDGenLink1" text="Books"/>
+                </Breadcrumbs>
+            </OverflowToolbar>
+        </subHeader>
+
+        <content>
+
+            <f:SimpleForm id="_IDGenSimpleForm2" title="Your Book">
+                <Label id="_IDGenLabel13" text="Title"/>
+                <Input id="_IDGenInput11" />
+                <Label id="_IDGenLabel14" text="Price"/>
+                <StepInput id="_IDGenStepInput1" description="€"/>
+            </f:SimpleForm>
+
+            <!-- <VBox class="sapUiMediumMarginBottom myBorderBox" >
+                <Title text="SAP.M.TEXT" class="titleBg" width="1230px" />
+            </VBox> -->
+
+            <!-- <VBox class="sapUiMediumMarginBottom myBorderBox" >
+                <Title text="SAP.M.TEXT" class="titleBg" width="1230px" />
+            </VBox> -->
+            
+
+        </content>
+        
+        <footer>
+            <OverflowToolbar id="_IDGenOverflowToolbar4" >
+                <ToolbarSpacer id="_IDGenToolbarSpacer6" />
+                <Button id="_IDGenButton26" text="Save" type="Accept"/>
+                <Button id="_IDGenButton27" text="Cancel" type="Reject"/>
+            </OverflowToolbar>
+        </footer>
+
+    </Page>
+</Panel>
+
 </mvc:View>
